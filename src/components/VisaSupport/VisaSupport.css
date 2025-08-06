@@ -1,0 +1,226 @@
+.visa-support {
+  background: #f8f9fa;
+}
+
+.visa-slider {
+  position: relative;
+}
+
+.visa-swiper {
+  padding-bottom: 50px;
+}
+
+.visa-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.visa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.visa-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.visa-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.visa-card:hover .visa-image img {
+  transform: scale(1.1);
+}
+
+.visa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.visa-info {
+  color: white;
+}
+
+.visa-country {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.visa-checkins {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.visa-content {
+  padding: 25px;
+}
+
+.visa-benefits {
+  margin-bottom: 25px;
+}
+
+.visa-benefits h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.visa-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visa-benefits li {
+  padding: 8px 0;
+  color: #666;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.visa-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.visa-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Swiper navigation customization */
+.visa-swiper .swiper-button-next,
+.visa-swiper .swiper-button-prev {
+  color: #007bff;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -25px;
+}
+
+.visa-swiper .swiper-button-next:after,
+.visa-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.visa-swiper .swiper-pagination-bullet {
+  background: #007bff;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+}
+
+.visa-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .visa-image {
+    height: 180px;
+  }
+  
+  .visa-content {
+    padding: 20px;
+  }
+  
+  .visa-country {
+    font-size: 1.2rem;
+  }
+  
+  .visa-swiper .swiper-button-next,
+  .visa-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  
+  .visa-swiper .swiper-button-next:after,
+  .visa-swiper .swiper-button-prev:after {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visa-image {
+    height: 160px;
+  }
+  
+  .visa-content {
+    padding: 15px;
+  }
+  
+  .visa-country {
+    font-size: 1.1rem;
+  }
+  
+  .visa-checkins {
+    font-size: 0.8rem;
+  }
+  
+  .visa-benefits li {
+    font-size: 0.8rem;
+    padding: 6px 0;
+  }
+  
+  .visa-swiper .swiper-button-next,
+  .visa-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .visa-image {
+    height: 140px;
+  }
+  
+  .visa-content {
+    padding: 12px;
+  }
+  
+  .visa-country {
+    font-size: 1rem;
+  }
+  
+  .visa-overlay {
+    padding: 15px;
+  }
+  
+  .visa-benefits h4 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .visa-benefits li {
+    font-size: 0.75rem;
+    padding-left: 20px;
+  }
+}

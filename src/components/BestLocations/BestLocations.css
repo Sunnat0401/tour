@@ -1,0 +1,265 @@
+.best-locations {
+  background: white;
+}
+
+.locations-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.locations-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.locations-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.locations-image:hover img {
+  transform: scale(1.05);
+}
+
+.locations-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(102, 126, 234, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.locations-image:hover .locations-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.overlay-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.overlay-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.locations-form {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-container {
+  max-width: 100%;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-btn {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .locations-content {
+    gap: 40px;
+  }
+  
+  .locations-image {
+    height: 400px;
+  }
+  
+  .locations-form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .locations-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .locations-image {
+    height: 300px;
+    order: 2;
+  }
+  
+  .locations-form {
+    order: 1;
+    padding: 25px;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .overlay-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .overlay-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .locations-image {
+    height: 250px;
+  }
+  
+  .locations-form {
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .booking-form {
+    gap: 15px;
+  }
+  
+  .form-control {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .form-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  
+  .overlay-content {
+    padding: 30px;
+  }
+  
+  .overlay-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .locations-image {
+    height: 200px;
+  }
+  
+  .locations-form {
+    padding: 15px;
+  }
+  
+  .form-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  
+  .form-control {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .form-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .overlay-content {
+    padding: 20px;
+  }
+  
+  .overlay-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .overlay-content p {
+    font-size: 0.8rem;
+  }
+}
