@@ -165,7 +165,7 @@ src/
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **React Team**: For the amazing React framework
 - **Vite Team**: For the lightning-fast build tool
@@ -173,6 +173,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **SwiperJS**: For beautiful carousel components
 - **Unsplash**: For high-quality stock photography
 
----
+---## 📞 Contact Me for Exciting Projects
+
+If you're interested in collaborating on exciting projects, feel free to get in touch:
+
+- 💬 Telegram: [@Sunnat0401](https://t.me/Sunnat0401) or [@Sunnat__0401](https://t.me/Sunnat__0401)  
+- 📱 Phone: +998 90 124 94 84 or +998 93 668 99 74
+
 
 **ZamonTour** - Your trusted partner for unforgettable travel experiences around the world.
